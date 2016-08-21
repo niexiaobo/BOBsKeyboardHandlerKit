@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "UIView+BOBs.h"
 #import "BOBTableBaseViewController.h"
+#import "HMTextView.h"
+#import "KeyboardToolView.h"
 @interface TableViewInterfaceEditorCtrl : BOBTableBaseViewController
 
 @end

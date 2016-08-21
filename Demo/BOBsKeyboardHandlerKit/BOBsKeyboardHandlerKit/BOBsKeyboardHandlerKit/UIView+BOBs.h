@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define TextScreenheight  [[UIScreen mainScreen] bounds].size.height
+#define TextScreenwidth  [[UIScreen mainScreen] bounds].size.width
 @interface UIView (BOBs)
 
 + (UIView *)initWithFrame:(CGRect)frame

@@ -34,6 +34,7 @@ typedef enum {
 @property (assign, nonatomic) BOOL isSameAction;
 
 - (void)fillKeyboardInfoWithDuration:(CGFloat)duration frameBegin:(CGRect)frameBegin frameEnd:(CGRect)frameEnd heightIncrement:(CGFloat)heightIncrement action:(KeyboardAction)action isSameAction:(BOOL)isSameAction;
+
 @end
 
 

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SingleInterfaceEditorCtrl.h"
 #import "TableViewInterfaceEditorCtrl.h"
+#import "TableViewMutInterfaceEditorCtrl.h"
 
 @interface ViewController ()
 @property(nonatomic, strong) NSMutableArray *dataArray;
@@ -21,7 +22,6 @@
     self.title = @"功能列表";
     [self.tableView reloadData];
     
-
 }
 
 #pragma mark - 数组懒加载
@@ -97,6 +97,10 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
         [self.navigationController pushViewController:ctrl animated:YES];
     } else if (indexPath.row == 2) {
         TableViewInterfaceEditorCtrl * ctrl = [[TableViewInterfaceEditorCtrl alloc]init];
+        ctrl.title = self.dataArray[indexPath.row - 1];
+        [self.navigationController pushViewController:ctrl animated:YES];
+    } else if (indexPath.row == 3) {
+        TableViewMutInterfaceEditorCtrl * ctrl = [[TableViewMutInterfaceEditorCtrl alloc]init];
         ctrl.title = self.dataArray[indexPath.row - 1];
         [self.navigationController pushViewController:ctrl animated:YES];
     }

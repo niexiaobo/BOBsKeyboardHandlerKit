@@ -17,9 +17,15 @@
 		F5F72DF81D62E994008C0D62 /* BOBsKeyboardHandlerKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72DF71D62E994008C0D62 /* BOBsKeyboardHandlerKitUITests.m */; };
 		F5F72E071D62EA73008C0D62 /* BOBTableBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72E061D62EA73008C0D62 /* BOBTableBaseViewController.m */; };
 		F5F72E0D1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72E0C1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m */; };
-		F5F72E121D62EECA008C0D62 /* ZYKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72E111D62EECA008C0D62 /* ZYKeyboardUtil.m */; };
 		F5F72E151D63133F008C0D62 /* TableViewInterfaceEditorCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72E141D63133F008C0D62 /* TableViewInterfaceEditorCtrl.m */; };
 		F5F72E181D631661008C0D62 /* UIView+BOBs.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72E171D631661008C0D62 /* UIView+BOBs.m */; };
+		F5F72F1B1D66E7E2008C0D62 /* KeyboardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F1A1D66E7E2008C0D62 /* KeyboardInfo.m */; };
+		F5F72F1E1D66E87E008C0D62 /* BOBKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F1D1D66E87E008C0D62 /* BOBKeyboardUtil.m */; };
+		F5F72F211D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F201D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m */; };
+		F5F72F241D66F8EB008C0D62 /* HMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F231D66F8EB008C0D62 /* HMTextView.m */; };
+		F5F72F271D66FBFF008C0D62 /* KeyboardToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F261D66FBFF008C0D62 /* KeyboardToolView.m */; };
+		F5F72F2A1D698C7C008C0D62 /* BOBTableKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */; };
+		F5F72F2E1D69F78E008C0D62 /* ZYKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +66,24 @@
 		F5F72E061D62EA73008C0D62 /* BOBTableBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBTableBaseViewController.m; sourceTree = "<group>"; };
 		F5F72E0B1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleInterfaceEditorCtrl.h; sourceTree = "<group>"; };
 		F5F72E0C1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleInterfaceEditorCtrl.m; sourceTree = "<group>"; };
-		F5F72E101D62EECA008C0D62 /* ZYKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYKeyboardUtil.h; sourceTree = "<group>"; };
-		F5F72E111D62EECA008C0D62 /* ZYKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeyboardUtil.m; sourceTree = "<group>"; };
 		F5F72E131D63133F008C0D62 /* TableViewInterfaceEditorCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewInterfaceEditorCtrl.h; path = BOBsKeyboardHandlerKit/TableViewInterfaceEditorCtrl.h; sourceTree = "<group>"; };
 		F5F72E141D63133F008C0D62 /* TableViewInterfaceEditorCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewInterfaceEditorCtrl.m; path = BOBsKeyboardHandlerKit/TableViewInterfaceEditorCtrl.m; sourceTree = "<group>"; };
 		F5F72E161D631661008C0D62 /* UIView+BOBs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BOBs.h"; sourceTree = "<group>"; };
 		F5F72E171D631661008C0D62 /* UIView+BOBs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BOBs.m"; sourceTree = "<group>"; };
+		F5F72F191D66E7E2008C0D62 /* KeyboardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardInfo.h; sourceTree = "<group>"; };
+		F5F72F1A1D66E7E2008C0D62 /* KeyboardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardInfo.m; sourceTree = "<group>"; };
+		F5F72F1C1D66E87E008C0D62 /* BOBKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBKeyboardUtil.h; sourceTree = "<group>"; };
+		F5F72F1D1D66E87E008C0D62 /* BOBKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBKeyboardUtil.m; sourceTree = "<group>"; };
+		F5F72F1F1D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewMutInterfaceEditorCtrl.h; path = BOBsKeyboardHandlerKit/TableViewMutInterfaceEditorCtrl.h; sourceTree = "<group>"; };
+		F5F72F201D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewMutInterfaceEditorCtrl.m; path = BOBsKeyboardHandlerKit/TableViewMutInterfaceEditorCtrl.m; sourceTree = "<group>"; };
+		F5F72F221D66F8EB008C0D62 /* HMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTextView.h; sourceTree = "<group>"; };
+		F5F72F231D66F8EB008C0D62 /* HMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextView.m; sourceTree = "<group>"; };
+		F5F72F251D66FBFF008C0D62 /* KeyboardToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardToolView.h; sourceTree = "<group>"; };
+		F5F72F261D66FBFF008C0D62 /* KeyboardToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardToolView.m; sourceTree = "<group>"; };
+		F5F72F281D698C7C008C0D62 /* BOBTableKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBTableKeyboardUtil.h; sourceTree = "<group>"; };
+		F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBTableKeyboardUtil.m; sourceTree = "<group>"; };
+		F5F72F2C1D69F78E008C0D62 /* ZYKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYKeyboardUtil.h; sourceTree = "<group>"; };
+		F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeyboardUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +134,8 @@
 		F5F72DD11D62E994008C0D62 /* BOBsKeyboardHandlerKit */ = {
 			isa = PBXGroup;
 			children = (
+				F5F72F221D66F8EB008C0D62 /* HMTextView.h */,
+				F5F72F231D66F8EB008C0D62 /* HMTextView.m */,
 				F5F72E0E1D62EE5F008C0D62 /* BOBsKeyboardHandlerKit */,
 				F5F72E051D62EA73008C0D62 /* BOBTableBaseViewController.h */,
 				F5F72E061D62EA73008C0D62 /* BOBTableBaseViewController.m */,
@@ -123,6 +143,8 @@
 				F5F72E141D63133F008C0D62 /* TableViewInterfaceEditorCtrl.m */,
 				F5F72E0B1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.h */,
 				F5F72E0C1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m */,
+				F5F72F1F1D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.h */,
+				F5F72F201D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m */,
 				F5F72DD51D62E994008C0D62 /* AppDelegate.h */,
 				F5F72DD61D62E994008C0D62 /* AppDelegate.m */,
 				F5F72DD81D62E994008C0D62 /* ViewController.h */,
@@ -165,18 +187,26 @@
 		F5F72E0E1D62EE5F008C0D62 /* BOBsKeyboardHandlerKit */ = {
 			isa = PBXGroup;
 			children = (
+				F5F72F2B1D69F78E008C0D62 /* Keyboard */,
 				F5F72E161D631661008C0D62 /* UIView+BOBs.h */,
 				F5F72E171D631661008C0D62 /* UIView+BOBs.m */,
-				F5F72E0F1D62EECA008C0D62 /* Keyboard */,
+				F5F72F191D66E7E2008C0D62 /* KeyboardInfo.h */,
+				F5F72F1A1D66E7E2008C0D62 /* KeyboardInfo.m */,
+				F5F72F251D66FBFF008C0D62 /* KeyboardToolView.h */,
+				F5F72F261D66FBFF008C0D62 /* KeyboardToolView.m */,
+				F5F72F1C1D66E87E008C0D62 /* BOBKeyboardUtil.h */,
+				F5F72F1D1D66E87E008C0D62 /* BOBKeyboardUtil.m */,
+				F5F72F281D698C7C008C0D62 /* BOBTableKeyboardUtil.h */,
+				F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */,
 			);
 			path = BOBsKeyboardHandlerKit;
 			sourceTree = "<group>";
 		};
-		F5F72E0F1D62EECA008C0D62 /* Keyboard */ = {
+		F5F72F2B1D69F78E008C0D62 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F5F72E101D62EECA008C0D62 /* ZYKeyboardUtil.h */,
-				F5F72E111D62EECA008C0D62 /* ZYKeyboardUtil.m */,
+				F5F72F2C1D69F78E008C0D62 /* ZYKeyboardUtil.h */,
+				F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -311,14 +341,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F72F1E1D66E87E008C0D62 /* BOBKeyboardUtil.m in Sources */,
 				F5F72E151D63133F008C0D62 /* TableViewInterfaceEditorCtrl.m in Sources */,
+				F5F72F241D66F8EB008C0D62 /* HMTextView.m in Sources */,
+				F5F72F271D66FBFF008C0D62 /* KeyboardToolView.m in Sources */,
 				F5F72E071D62EA73008C0D62 /* BOBTableBaseViewController.m in Sources */,
 				F5F72E181D631661008C0D62 /* UIView+BOBs.m in Sources */,
 				F5F72DDA1D62E994008C0D62 /* ViewController.m in Sources */,
 				F5F72DD71D62E994008C0D62 /* AppDelegate.m in Sources */,
 				F5F72E0D1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m in Sources */,
+				F5F72F2E1D69F78E008C0D62 /* ZYKeyboardUtil.m in Sources */,
+				F5F72F1B1D66E7E2008C0D62 /* KeyboardInfo.m in Sources */,
+				F5F72F2A1D698C7C008C0D62 /* BOBTableKeyboardUtil.m in Sources */,
+				F5F72F211D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m in Sources */,
 				F5F72DD41D62E994008C0D62 /* main.m in Sources */,
-				F5F72E121D62EECA008C0D62 /* ZYKeyboardUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +580,7 @@
 				F5F72DFE1D62E994008C0D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F72DFF1D62E994008C0D62 /* Build configuration list for PBXNativeTarget "BOBsKeyboardHandlerKitTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +589,7 @@
 				F5F72E011D62E994008C0D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F72E021D62E994008C0D62 /* Build configuration list for PBXNativeTarget "BOBsKeyboardHandlerKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +598,7 @@
 				F5F72E041D62E994008C0D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

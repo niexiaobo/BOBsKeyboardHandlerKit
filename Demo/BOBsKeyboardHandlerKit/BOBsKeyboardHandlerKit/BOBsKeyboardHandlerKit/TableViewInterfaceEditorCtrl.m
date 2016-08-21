@@ -7,21 +7,30 @@
 //
 
 #import "TableViewInterfaceEditorCtrl.h"
-#import "ZYKeyboardUtil.h"
+#import "BOBKeyboardUtil.h"
 
-@interface TableViewInterfaceEditorCtrl ()<UITextViewDelegate,UITextFieldDelegate>
+@interface TableViewInterfaceEditorCtrl ()<UITextViewDelegate,UITextFieldDelegate,KeyboardToolViewDelegate>
 @property(nonatomic, strong) NSMutableArray *dataArray;
-@property (strong, nonatomic) ZYKeyboardUtil *keyboardUtil;
+@property (strong, nonatomic) BOBKeyboardUtil *keyboardUtil;
+@property (copy, nonatomic) KeyboardToolView *keybToolView;
 @end
 
 @implementation TableViewInterfaceEditorCtrl
+- (KeyboardToolView *)keybToolView {
+    if (!_keybToolView) {
+        _keybToolView = [KeyboardToolView initWithToolViewFrame:CGRectMake(0, 0, TextScreenwidth, 50)];
+        _keybToolView.Delegate = self;
+    }
+    return _keybToolView;
+}
+
 - (void)configKeyBoardRespond {
-    self.keyboardUtil = [[ZYKeyboardUtil alloc] init];
+    self.keyboardUtil = [[BOBKeyboardUtil alloc] init];
     
     __weak TableViewInterfaceEditorCtrl *weakSelf = self;
 #pragma explain - 全自动键盘弹出/收起处理 (需调用keyboardUtil 的 adaptiveViewHandleWithController:adaptiveView:)
 #pragma explain - use animateWhenKeyboardAppearBlock, animateWhenKeyboardAppearAutomaticAnimBlock will be invalid.
-    [_keyboardUtil setAnimateWhenKeyboardAppearAutomaticAnimBlock:^(ZYKeyboardUtil *keyboardUtil) {
+    [_keyboardUtil setAnimateWhenKeyboardAppearAutomaticAnimBlock:^(BOBKeyboardUtil *keyboardUtil) {
         [keyboardUtil adaptiveViewHandleWithController:weakSelf adaptiveView:weakSelf.view, nil];
     }];
     
@@ -44,7 +53,7 @@
      */
     
 #pragma explain - 获取键盘信息
-    [_keyboardUtil setPrintKeyboardInfoBlock:^(ZYKeyboardUtil *keyboardUtil, KeyboardInfo *keyboardInfo) {
+    [_keyboardUtil setPrintKeyboardInfoBlock:^(BOBKeyboardUtil *keyboardUtil, KeyboardInfo *keyboardInfo) {
         NSLog(@"\n\n拿到键盘信息 和 ZYKeyboardUtil对象");
     }];
 }
@@ -115,16 +124,21 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
         NSString *titleStr = self.dataArray[indexPath.row - 1];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.textLabel.text = titleStr;
-        UITextField *testView2 = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 54)];
+        UITextField *testView2 = [[UITextField alloc]initWithFrame:CGRectMake(15, 15, self.view.frame.size.width - 30, 25)];
+        testView2.placeholder = @"UITextField";
         testView2.delegate = self;
+        testView2.inputAccessoryView  = self.keybToolView;
         testView2.backgroundColor = [UIColor whiteColor];
         [cell.contentView addSubview:testView2];
         
-        UITextView *testView = [[UITextView alloc]initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 100)];
+        HMTextView *testView = [[HMTextView alloc]initWithFrame:CGRectMake(15, 60, self.view.frame.size.width - 30, 100)];
         testView.delegate = self;
+        testView.placehoder = @"UITextView";
+        testView.inputAccessoryView  = self.keybToolView;
+        testView.backgroundColor = [UIColor whiteColor];
         [cell.contentView addSubview:testView];
 
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = [UIColor grayColor];
         return cell;
         
     } else {
@@ -194,9 +208,18 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if ([scrollView isKindOfClass:[UITableView class]]) {
-        [self.view endEditing:YES];
-    }
+    
+    NSLog(@"--height---->%.f<----Offset-y--->%.f<-----contentSizeH--->%.f<----",self.tableView.height ,self.tableView.contentOffset.y,self.tableView.contentSize.height);
+    
+    
+//    if ([scrollView isKindOfClass:[UITableView class]]) {
+//        [self.view endEditing:YES];
+//    }
+}
+
+#pragma mark - KeyboardToolViewDelegate
+- (void)toolButtonClick:(UIButton*)btn {
+    [self.view endEditing:YES];
 }
 
 - (void)dealloc {

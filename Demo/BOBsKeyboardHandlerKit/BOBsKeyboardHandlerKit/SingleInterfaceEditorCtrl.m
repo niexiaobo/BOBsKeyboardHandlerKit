@@ -7,10 +7,10 @@
 //
 
 #import "SingleInterfaceEditorCtrl.h"
-#import "ZYKeyboardUtil.h"
+#import "BOBKeyboardUtil.h"
 @interface SingleInterfaceEditorCtrl ()<UITextViewDelegate>
 @property (strong, nonatomic) UITextView *testView;
-@property (strong, nonatomic) ZYKeyboardUtil *keyboardUtil;
+@property (strong, nonatomic) BOBKeyboardUtil *keyboardUtil;
 @end
 
 @implementation SingleInterfaceEditorCtrl
@@ -27,12 +27,12 @@
 }
 
 - (void)configKeyBoardRespond {
-    self.keyboardUtil = [[ZYKeyboardUtil alloc] init];
+    self.keyboardUtil = [[BOBKeyboardUtil alloc] init];
     
     __weak SingleInterfaceEditorCtrl *weakSelf = self;
 #pragma explain - 全自动键盘弹出/收起处理 (需调用keyboardUtil 的 adaptiveViewHandleWithController:adaptiveView:)
 #pragma explain - use animateWhenKeyboardAppearBlock, animateWhenKeyboardAppearAutomaticAnimBlock will be invalid.
-    [_keyboardUtil setAnimateWhenKeyboardAppearAutomaticAnimBlock:^(ZYKeyboardUtil *keyboardUtil) {
+    [_keyboardUtil setAnimateWhenKeyboardAppearAutomaticAnimBlock:^(BOBKeyboardUtil *keyboardUtil) {
         [keyboardUtil adaptiveViewHandleWithController:weakSelf adaptiveView:weakSelf.view,weakSelf.testView, nil];
     }];
     
@@ -55,8 +55,8 @@
      */
     
 #pragma explain - 获取键盘信息
-    [_keyboardUtil setPrintKeyboardInfoBlock:^(ZYKeyboardUtil *keyboardUtil, KeyboardInfo *keyboardInfo) {
-        NSLog(@"\n\n拿到键盘信息 和 ZYKeyboardUtil对象");
+    [_keyboardUtil setPrintKeyboardInfoBlock:^(BOBKeyboardUtil *keyboardUtil, KeyboardInfo *keyboardInfo) {
+        NSLog(@"\n\n拿到键盘信息 和 BOBKeyboardUtil对象");
     }];
 }
 
