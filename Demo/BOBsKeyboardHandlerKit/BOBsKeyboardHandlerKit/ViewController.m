@@ -27,7 +27,7 @@
 #pragma mark - 数组懒加载
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
-        NSArray *titleArray = @[@"普通的界面单层编辑", @"tableView多层编辑", @"综合编辑" ];
+        NSArray *titleArray = @[@"普通的UiView界面", @"普通tableView多层编辑", @"综合编辑" ];
         _dataArray = [[NSMutableArray alloc] initWithArray:titleArray];
         
     }

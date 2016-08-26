@@ -25,7 +25,6 @@
 		F5F72F241D66F8EB008C0D62 /* HMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F231D66F8EB008C0D62 /* HMTextView.m */; };
 		F5F72F271D66FBFF008C0D62 /* KeyboardToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F261D66FBFF008C0D62 /* KeyboardToolView.m */; };
 		F5F72F2A1D698C7C008C0D62 /* BOBTableKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */; };
-		F5F72F2E1D69F78E008C0D62 /* ZYKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +81,6 @@
 		F5F72F261D66FBFF008C0D62 /* KeyboardToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardToolView.m; sourceTree = "<group>"; };
 		F5F72F281D698C7C008C0D62 /* BOBTableKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOBTableKeyboardUtil.h; sourceTree = "<group>"; };
 		F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOBTableKeyboardUtil.m; sourceTree = "<group>"; };
-		F5F72F2C1D69F78E008C0D62 /* ZYKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYKeyboardUtil.h; sourceTree = "<group>"; };
-		F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeyboardUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +184,6 @@
 		F5F72E0E1D62EE5F008C0D62 /* BOBsKeyboardHandlerKit */ = {
 			isa = PBXGroup;
 			children = (
-				F5F72F2B1D69F78E008C0D62 /* Keyboard */,
 				F5F72E161D631661008C0D62 /* UIView+BOBs.h */,
 				F5F72E171D631661008C0D62 /* UIView+BOBs.m */,
 				F5F72F191D66E7E2008C0D62 /* KeyboardInfo.h */,
@@ -200,15 +196,6 @@
 				F5F72F291D698C7C008C0D62 /* BOBTableKeyboardUtil.m */,
 			);
 			path = BOBsKeyboardHandlerKit;
-			sourceTree = "<group>";
-		};
-		F5F72F2B1D69F78E008C0D62 /* Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				F5F72F2C1D69F78E008C0D62 /* ZYKeyboardUtil.h */,
-				F5F72F2D1D69F78E008C0D62 /* ZYKeyboardUtil.m */,
-			);
-			path = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,7 +337,6 @@
 				F5F72DDA1D62E994008C0D62 /* ViewController.m in Sources */,
 				F5F72DD71D62E994008C0D62 /* AppDelegate.m in Sources */,
 				F5F72E0D1D62ED77008C0D62 /* SingleInterfaceEditorCtrl.m in Sources */,
-				F5F72F2E1D69F78E008C0D62 /* ZYKeyboardUtil.m in Sources */,
 				F5F72F1B1D66E7E2008C0D62 /* KeyboardInfo.m in Sources */,
 				F5F72F2A1D698C7C008C0D62 /* BOBTableKeyboardUtil.m in Sources */,
 				F5F72F211D66F7B3008C0D62 /* TableViewMutInterfaceEditorCtrl.m in Sources */,
